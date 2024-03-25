@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 2</title>
+</head>
+<body>
+
+    <!-- <label for="">konversi jam</label>
+    <input type="number" name="nomer" id="no"></br>
+    <button onclick="hasil()">hasil</button></br>
+    <div id="hasill"></div> -->
+    
+    <script>
+
+        // ============================================================== //
+        
+        
+        // function hasil() {
+        //     const dataTotal = parseInt (document.querySelector ("#no").value);
+        //     let jam = parseInt (dataTotal / 3600)
+        //     let menit = parseInt (dataTotal % 3600 / 60)
+        //     let detik = dataTotal % 60
+            
+        //     console.log (`jam : ${jam}; menit : ${menit}; detik : ${detik}`)
+        //     console.log (`${jam}:${menit}:${detik}`)
+        // }
+        
+
+        // ==================================================================== //
+
+        // let nama = prompt('masukan nama anda')
+        // let gajiPokok = prompt('masukan gaji anda')
+        // let tunj = gajiPokok * 20/100
+        // let pjk = (gajiPokok * 1 + tunj) * 15/100
+
+        // let gajiBersih = gajiPokok * 1 + tunj * 1 - pjk
+
+        // console.log (`nama karyawan = ${nama}`)
+        // console.log (`tunjangan = ${tunj}`)
+        // console.log (`harga pajak = ${pjk}`)
+        // console.log (`gaji bersih ${nama} adalah ${gajiBersih}`)
+
+        // document.write (`nama karyawan = ${nama} </br>`)
+        // document.write (`tunjangan = ${tunj} </br>`)
+        // document.write (`harga pajak = ${pjk} </br>`)
+        // document.write (`gaji bersih ${nama} adalah ${gajiBersih} </br>`)
+        
+
+        // =============================================================== //
+
+        let j = 1
+        let m = 60
+        let d = 3600
+
+        const inputJ = prompt('masukan jam')
+        const inputM = prompt('masukan menit')
+        const inputD = prompt('masukan detik')
+
+        let total = (inputJ * d) + (inputM * m) + inputD * j
+
+        console.log (total)
+        document.write (total)
+
+// ====================================================================== //
+
+        // const dataTotal = 120102;
+
+        // let jam = parseInt (dataTotal / 3600)
+        // let menit = parseInt (dataTotal % 3600 / 60)
+        // let detik = dataTotal % 60
+
+        // console.log (`jam : ${jam}; menit : ${menit}; detik : ${detik}`)
+        // console.log (`${jam}:${menit}:${detik}`)
+
+        
+
+    </script>
+
+    
+
+</body>
+</html>

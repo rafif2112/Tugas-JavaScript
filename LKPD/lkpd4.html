@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 4</title>
+</head>
+<body>
+    <script>
+        
+        let kodePegawai = 42112200720;
+        let g = Math.floor (kodePegawai / 10000000000)
+        let dd = Math.floor (kodePegawai / 100000000 % 100)
+        let mm = Math.floor (kodePegawai / 1000000 % 100)
+        switch (mm) {
+            case 1:
+                mm = "januari";
+            break;
+            case 2 :
+                mm = 'februari'
+            break;
+            case 3 :
+                mm = 'maret';
+            break;
+            case 4 :
+                mm = "april"
+            break;
+            case 5 :
+                mm = "Mei"
+            break;
+            case 6 :
+                mm = "juni"
+            break;
+            case 7 :
+                mm = "Juli"
+            break;
+            case 8 :
+                mm = "Agustus"
+            break;
+            case 9 :
+                mm = "september"
+            break;
+            case 10 :
+                mm = "oktober"
+            break;
+            case 11 :
+                mm = "November"
+            break;
+            case 12 :
+                mm = "desember"
+            break;
+            default : 
+                mm = 'gada'
+        }
+        let yyyy = Math.floor (kodePegawai / 100 % 10000)
+        let nn = Math.floor (kodePegawai % 100)
+
+        console.log(g, dd, mm, yyyy, nn);
+
+        // ======================================================================== //
+
+
+        let jam = 21
+        let menit = 51
+        let detik = 59
+
+        let totalDetik = (jam * 3600) + (menit * 60) + (detik) + 1
+
+        jam = Math.floor (totalDetik / 3600 % 24)
+        menit = Math.floor (totalDetik % 3600 / 60)
+        detik = totalDetik % 60
+
+        document.write (`${jam}:${menit}:${detik}`)
+
+    </script>
+</body>
+</html>

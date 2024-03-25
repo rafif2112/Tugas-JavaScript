@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 3</title>
+</head>
+<body>
+    <script>
+
+        let harga = 500 
+        let beli = 3
+
+        let jumlahUang = (beli * 1000) * harga / 100
+        let diskon = jumlahUang * 5/100
+
+        console.log (`harga sebelum diskon ${jumlahUang}`)
+        console.log (`harga diskon ${diskon}`)
+        console.log (`harga setelah diskon ${jumlahUang - diskon}`)
+
+
+        // ==================================================================== //
+
+        let bilBul = 1234567
+
+        let juta = parseInt (bilBul / 1000000)
+        let ratus = parseInt (bilBul % 1000000 / 1000)
+        let ribu = parseInt (bilBul % 1000)
+
+        console.log (`${juta} juta ${ratus} ratus ${ribu} ribu`)
+
+        let satuan = parseInt (bilBul % 10)
+        let puluhan = parseInt (bilBul / 10 % 10)
+        let ratusan = parseInt (bilBul / 100 % 10)
+        let ribuan = parseInt (bilBul / 1000 % 10)
+
+        console.log (`${satuan} satuan ${puluhan} puluhan ${ratusan} ratusan ${ribuan} ribuan`)
+
+
+        // ==================================================================== //
+
+        let F = 10
+        let C = parseInt((F - 32) * 5/9)
+
+        if (C >= 300) {
+            console.log ('Suhu Panas')
+        } else if (C >= 250 && C < 300){
+            console.log('Suhu Normal');
+        } else {
+            console.log('Suhu Dingin', C);
+        }
+
+
+    </script>
+</body>
+</html>
